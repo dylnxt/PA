@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600,800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#promotions {
+    background: url(../img/blob_bg.svg) top right no-repeat;
+}
+
+#activities {
+    background: url(../img/activities_bg.svg) top left no-repeat;
+}
+
+.card-title {
+    color: #E31B23;
+    font-weight: 600;
+}
+
+.border-bottom-section {
+    border-bottom: 1px solid #E31B23;
+}
+
+.pa-border {
+    border: 1px solid #E31B23;
+}
