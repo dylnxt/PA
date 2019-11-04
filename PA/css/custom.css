@@ -29,3 +29,30 @@ h1, h2, h3, .display-1, .display-2, .display-3, .display-4 {
 .pa-border {
     border: 1px solid #E31B23;
 }
+
+.btn-pa-outline {
+    color: #E31B23;
+    border-color: #E31B23;
+  }
+
+.btn-pa-outline:hover {
+    color: #fff;
+    background-color: #E31B23;
+    border-color: #E31B23;
+  }
+
+.border-pa-courses {
+    border-left: 10px solid #F7DB05 !important;
+}
+
+.border-pa-events {
+    border-left: 10px solid #E31B23 !important;
+}
+
+.border-pa-groups {
+    border-left: 10px solid #6EBF44 !important;
+}
+
+.border-pa-facilities {
+    border-left: 10px solid #6FCCDD !important;
+}
