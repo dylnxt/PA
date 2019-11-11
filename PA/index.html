@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Font Awesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -15,27 +18,31 @@
   </head>
   <body>
     <header class="navbar navbar-expand-lg">
+      
+      <a href="#" class="navbar-brand"><img class="w-75" src="img/logo.svg"></a>
       <form class="form-inline"> 
-        <a href="#" class="navbar-brand"><img class="w-75" src="img/logo.svg"></a>
+       
         <input type="search" class="form-control">
-        <input type="button" class="btn btn-danger" value="Search">
+        <button class="btn btn-pa-solid"><i class="fa fa-search fa-lg"></i></button>
       </form>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Courses</a>
-            <a class="nav-item nav-link " href="#">Events</a>
-            <a class="nav-item nav-link " href="#">Facilities</a>
-            <a class="nav-item nav-link " href="#">Interest Groups</a>
 
-          </div>
-        </div>
-      </nav>
+    <nav id="paNavBar">
+        <ul class="nav nav-justified">
+            <li class="nav-item" id="navCourses">
+              <a class="nav-link py-3" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Courses</h4><p>I want to learn</p></div></a>
+            </li>
+            <li class="nav-item" id="navEvents">
+              <a class="nav-link py-3" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Events</h4><p>I want to attend</p></div></a>
+            </li>
+            <li class="nav-item" id="navFacilities">
+              <a class="nav-link py-3" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Facilities</h4><p>I want to book</p></div></a>
+            </li>
+            <li class="nav-item" id="navGroups">
+              <a class="nav-link py-3" href="#"><div class="text-left w-75 mx-auto"><h4 class="text-uppercase font-weight-bold">Interest Groups</h4><p>I want to join</p></div></a>
+            </li>
+          </ul>
+    </nav>
 
       <main role="main">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -99,6 +106,7 @@
                       <p class="card-text text-muted">Learn yoga fitness with a friend and get a discount.</p>
                       <p class="card-text mt-auto"><small><u>Ang Mo Kio CC</u><br>17 Aug, Sat, 9.00am &mdash; 10.00am<br>
                           10 lessons</small></p>
+                          
                     </div>
                   </div>
                   <div class="card shadow-sm">
@@ -277,7 +285,7 @@
                     </div>  
                   
                     <div class="row">
-                      <div class="col-lg-12 text-center pt-5">
+                      <div class="col-lg-12 text-center mt-5">
                           <button type="button" class="btn btn-pa-outline rounded-pill px-3">Explore</button>
                       </div>
                     </div>
@@ -286,7 +294,7 @@
             </section><!-- trending -->
 
             <section id="location" class="py-5">
-              <div class="container">
+              <div class="container border-bottom-section">
                   <div class="row">
                       <div class="col-lg-12 mx-auto mb-5 text-center border-bottom-section">
                           <h1 class="text-uppercase">Activities near your location</h1>
@@ -302,53 +310,132 @@
                         10 lessons</small></p>
                     </div>
                     <div class="col-lg-2">
-                      <button type="button" class="btn btn-pa-outline rounded px-3">BOOK</button>
+                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
                     </div>
-                    <div class="col-lg-2 pb-0">
-                      <small>$140<br>PAssion discount</small>
-                      <p>$120</p>
+                    <div class="col-lg-2 text-right">
+                      <small><del>$140</del><br>PAssion discount</small>
+                      <h4 class="font-weight-bold">$120</h4>
                     </div>
                   </div>
 
-                  <div class="row border-pa-events p-5 mb-3 bg-light ">
-                    <div class="col-lg-9">
+                  <div class="row border-pa-events py-4 pl-4 mb-3 bg-light d-flex align-items-end">
+                    <div class="col-lg-8">
                       <h4 class="font-weight-bold text-capitalize">Mid-autumn gathering</h4>
-                      <p>Yoga Stretch is a combination of Stretch Exercise with Aromatherapy. The programme is a combination of stretch and core muscles building. For beginners</p>
+                      <p>Yoga Stretch is a combination of Stretch Exercise with Aromatherapy. The programme is a combination of stretch and core muscles building. For beginners.</p>
+                      <p class="card-text mt-auto"><small><u>Bishan CC</u><br>20 Aug, Tue, 5.30pm &mdash; 6.30pm<br>
+                        10 lessons</small></p>
                     </div>
-                    <div class="col-lg-3">
-                      <button type="button" class="btn btn-pa-outline rounded px-3">BOOK</button>
+                    <div class="col-lg-2">
+                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                      <small><del>$5</del><br>PAssion discount</small>
+                      <h4 class="font-weight-bold">$3</h4>
                     </div>
                   </div>
 
-                  <div class="row border-pa-facilities p-5 mb-3 bg-light">
-                    <div class="col-lg-9">
+                  <div class="row border-pa-facilities py-4 pl-4 mb-3 bg-light d-flex align-items-end">
+                    <div class="col-lg-8">
                       <h4 class="font-weight-bold text-capitalize">Dance studio open house</h4>
-                      <p>Yoga Stretch is a combination of Stretch Exercise with Aromatherapy. The programme is a combination of stretch and core muscles building. For beginners</p>
+                      <p>Yoga Stretch is a combination of Stretch Exercise with Aromatherapy. The programme is a combination of stretch and core muscles building. For beginners.</p>
+                      <p class="card-text mt-auto"><small><u>Bishan CC</u><br>20 Aug, Tue, 5.30pm &mdash; 6.30pm<br>
+                        10 lessons</small></p>
                     </div>
-                    <div class="col-lg-3">
-                      <button type="button" class="btn btn-pa-outline rounded px-3">BOOK</button>
+                    <div class="col-lg-2">
+                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                      
+                      <h4 class="font-weight-bold">Free</h4>
                     </div>
                   </div>
 
-
-                  <div class="row border-pa-groups p-5 mb-3 bg-light">
-                    <div class="col-lg-9">
+                  <div class="row border-pa-groups py-4 pl-4 mb-3 bg-light d-flex align-items-end">
+                    <div class="col-lg-8">
                       <h4 class="font-weight-bold text-capitalize">Yoga pilates group</h4>
-                      <p>Yoga Stretch is a combination of Stretch Exercise with Aromatherapy. The programme is a combination of stretch and core muscles building. For beginners</p>
+                      <p>Yoga Stretch is a combination of Stretch Exercise with Aromatherapy. The programme is a combination of stretch and core muscles building. For beginners.</p>
+                      <p class="card-text mt-auto"><small><u>Bishan CC</u><br>20 Aug, Tue, 5.30pm &mdash; 6.30pm<br>
+                        10 lessons</small></p>
                     </div>
-                    <div class="col-lg-3">
-                      <button type="button" class="btn btn-pa-outline rounded px-3">BOOK</button>
+                    <div class="col-lg-2">
+                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                      <h4 class="font-weight-bold">Free</h4>
                     </div>
                   </div>
+
+                  <div class="row pb-5 my-5">
+                    <div class="col-lg-12 text-center">
+                        <button type="button" class="btn btn-pa-outline rounded-pill px-3">Load More</button>
+                    </div>
+                  </div>
+
 
               </div>
             </section><!-- location -->
+          </main>
+
+            <footer class="py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-2">
+                    <span class="footerLogo">onePA</span>
+                  </div>
+                  <div class="col-4">
+                      <h6 class="text-uppercase mb-3"><u>Explore</u></h6>
+                      <div class="row mb-4">
+                          <div class="col mb-3 font-weight-bold">About Us</div>
+                          <div class="w-100"></div>  
+                          <div class="col mb-3 font-weight-bold">Courses</div>
+                          <div class="col mb-3 font-weight-bold">Events</div>
+                          <div class="w-100"></div>
+                          <div class="col mb-3 font-weight-bold">Interest Groups</div>
+                          <div class="col mb-3 font-weight-bold">Facilities</div>
+                      </div>
+                     
+                        <h6 class="font-weight-bold card-title">Locate a Community Centre</h6>
+                        <form class="form-inline"> 
+                            <input type="search" class="form-control">
+                            <button class="btn btn-pa-solid"><i class="fa fa-search"></i></button>
+                          </form>
+                      
+                  </div>
+                  <div class="col-3">
+                      <h6 class="text-uppercase mb-3"><u>Contact Us</u></h6>
+                      <p>+65 6345 6163 </p>
+                      <p>helpdesk@onepa.sg</p>
+                  </div>
+                  <div class="col-3 px-1">
+                      <h6 class="text-uppercase"><u>Follow Us</u></h6>
+                      <div class="mb-4">
+                        <i class="fa fa-facebook fa-lg mr-4"></i>
+                        <i class="fa fa-instagram fa-lg mr-4"></i>
+                        <i class="fa fa-twitter fa-lg"></i>
+                      </div>
+                      <p>Join our mailing list</p>
+                      <form class="d-flex flex-column align-items-end p-3" style="background: #F5F5F5">
+                        <div class="form-group w-100">
+                            <label for="inputName">Name</label>
+                            <input type="email" class="form-control" id="inputName" style="border-color: #E31B23;">
+                        </div>
+                        <div class="form-group w-100">
+                          <label for="inputEmail">Email address</label>
+                          <input type="email" class="form-control" id="inputEmail" style="border-color: #E31B23;">
+                        </div>
+                        <button type="submit" class="btn btn-pa-solid text-uppercase align-right mt-auto p-2 font-weight-bold">Subscribe</button>
+                      </form>
+                    </div>
+                </div>
+
+              </div>
+            </footer>
               
            
       
       
       
-          </main>
+          
 
 
     <!-- Optional JavaScript -->
