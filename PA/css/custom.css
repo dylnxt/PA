@@ -68,6 +68,12 @@ h1, h2, h3, .display-1, .display-2, .display-3, .display-4 {
     color: #fff;     
     font-family: 'Open Sans', sans-serif;
     background-color: #616161; 
+    /*padding: 1.2rem 0;*/
+}
+
+#paNavBar li ul a {
+    background-color: #fff;
+    color: #616161; 
 }
 
 .carousel-caption {
@@ -107,29 +113,30 @@ h1, h2, h3, .display-1, .display-2, .display-3, .display-4 {
     border-left: 1px solid #fff;
  }  
 
- /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+ .dropdown-toggle::after {
     display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(227, 27, 35, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(227, 27, 35, 0.6);
+  outline: 0 none;
+}
+
+
+
