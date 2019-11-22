@@ -5,43 +5,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Font Awesome 4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- Font Awesome -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/custom.css">
    
 
     <title>OnePA</title>
   </head>
   <body>
-    <header class="navbar navbar-expand-lg">
+    <header class="container-fluid d-flex flex-column">
+    <div class="row align-items-center">
+      <div class="col-2">
+        <a href="#" class="navbar-brand"><img src="img/logo.svg" class="w-75"></a>
+      </div>
       
-      <a href="#" class="navbar-brand"><img class="w-75" src="img/logo.svg"></a>
-      <form class="form-inline"> 
-       
-        <input type="search" class="form-control">
-        <button class="btn btn-pa-solid"><i class="fa fa-search fa-lg"></i></button>
+      <form class="form-inline col"> 
+        <input type="text" class="form-control w-75" placeholder="Search a course, event, interest group or facilities">
+        <button class="btn btn-pa-solid"><i class="fas fa-search fa-lg"></i></button>
       </form>
+      <div class="col-4 d-flex justify-content-end">
+
+        <span class="mr-4"><img src="img/header_icon_login.svg" class="mr-2" style="width: 20%"><small>Log In | Sign Up</small></span>
+        <span class="mr-4"><img src="img/header_icon_cart.svg" class="mr-2"  style="width: 45%"><small>Cart</small></span>
+        <span><img src="img/header_icon_loc.svg" class="mr-2"  style="width: 30%"><small>Bishan</small></span>
+      </div>
+
+    </div><!-- row -->
     </header>
+    
 
     <nav id="paNavBar">
-        <ul class="nav nav-justified">
-            <li class="nav-item" id="navCourses">
-              <a class="nav-link py-3" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Courses</h4><p>I want to learn</p></div></a>
+
+       
+          <ul class="nav nav-justified">
+            <li class="nav-item dropdown">
+              <a id="navCourses" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><div class="text-left w-50 mx-auto" style="display: inline-block"><h4 class="text-uppercase font-weight-bold">Courses</h4><p>I want to learn</p></div><i class="fa fa-angle-down fa-2x"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Arts &amp; Music</a></li>
+                <li><a href="#">Culinary &amp; Food</a></li>
+                <li><a href="#">Computing &amp; IT</a></li>
+                <li><a href="#">Dance</a></li>
+                <li><a href="#">Family &amp; Kids</a></li>
+                <li><a href="#">Health &amp; Wellness</a></li>
+                <li><a href="#">Home &amp; Lifestyle</a></li>
+                <li><a href="#">Language</a></li>
+                <li><a href="#">Sports &amp; Fitness</a></li>
+              </ul>
+            
             </li>
-            <li class="nav-item" id="navEvents">
-              <a class="nav-link py-3" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Events</h4><p>I want to attend</p></div></a>
+            <li class="nav-item">
+              <a  id="navEvents" class="nav-link" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Events</h4><p>I want to attend</p></div></a>
             </li>
-            <li class="nav-item" id="navFacilities">
-              <a class="nav-link py-3" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Facilities</h4><p>I want to book</p></div></a>
+            <li class="nav-item">
+              <a id="navFacilities" class="nav-link" href="#"><div class="text-left w-50 mx-auto"><h4 class="text-uppercase font-weight-bold">Facilities</h4><p>I want to book</p></div></a>
             </li>
-            <li class="nav-item" id="navGroups">
-              <a class="nav-link py-3" href="#"><div class="text-left w-75 mx-auto"><h4 class="text-uppercase font-weight-bold">Interest Groups</h4><p>I want to join</p></div></a>
+            <li class="nav-item">
+              <a id="navGroups" class="nav-link" href="#"><div class="text-left w-75 mx-auto"><h4 class="text-uppercase font-weight-bold">Interest Groups</h4><p>I want to join</p></div></a>
             </li>
           </ul>
+        
+
+          
+          
     </nav>
 
       <main role="main">
@@ -57,7 +86,7 @@
                   <div class="container">
                     <div class="carousel-caption">
                       <h1 class="display-4">Bringing people together</h1>
-                      <p>Learn a new skill, meet people in your community and just bond</p>
+                      <p class="h4">Learn a new skill, meet people in your community and just bond</p>
                     </div>
                   </div>
                 </div>
@@ -66,7 +95,7 @@
                   <div class="container">
                     <div class="carousel-caption">
                       <h1 class="display-4">Bond, live, learn, play</h1>
-                      <p>Make new friends, learn a new skill or get to know your neighbours</p>
+                      <p class="h4">Make new friends, learn a new skill or get to know your neighbours</p>
                     </div>
                   </div>
                 </div>
@@ -75,7 +104,7 @@
                     <div class="container">
                     <div class="carousel-caption">
                       <h1 class="display-4">Bond with people</h1>
-                      <p>Learn a new skill, meet people in your community and just bond</p>
+                      <p class="h4">Learn a new skill, meet people in your community and just bond</p>
                     </div>
                   </div>
                 </div>
@@ -310,7 +339,8 @@
                         10 lessons</small></p>
                     </div>
                     <div class="col-lg-2">
-                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
+                      <button type="button" class="btn btn-pa-solid px-4">BOOK</button>
+                      <button type="button" class="btn btn-pa-solid"><i class="fas fa-shopping-cart"></i></button>
                     </div>
                     <div class="col-lg-2 text-right">
                       <small><del>$140</del><br>PAssion discount</small>
@@ -326,7 +356,8 @@
                         10 lessons</small></p>
                     </div>
                     <div class="col-lg-2">
-                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
+                        <button type="button" class="btn btn-pa-solid px-4">BOOK</button>
+                        <button type="button" class="btn btn-pa-solid"><i class="fas fa-shopping-cart"></i></button>
                     </div>
                     <div class="col-lg-2 text-right">
                       <small><del>$5</del><br>PAssion discount</small>
@@ -342,7 +373,8 @@
                         10 lessons</small></p>
                     </div>
                     <div class="col-lg-2">
-                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
+                        <button type="button" class="btn btn-pa-solid px-4">BOOK</button>
+                        <button type="button" class="btn btn-pa-solid"><i class="fas fa-shopping-cart"></i></button>
                     </div>
                     <div class="col-lg-2 text-right">
                       
@@ -358,7 +390,8 @@
                         10 lessons</small></p>
                     </div>
                     <div class="col-lg-2">
-                      <button type="button" class="btn btn-pa-solid px-5">BOOK</button>
+                        <button type="button" class="btn btn-pa-solid px-4">BOOK</button>
+                        <button type="button" class="btn btn-pa-solid"><i class="fas fa-shopping-cart"></i></button>
                     </div>
                     <div class="col-lg-2 text-right">
                       <h4 class="font-weight-bold">Free</h4>
@@ -396,8 +429,8 @@
                      
                         <h6 class="font-weight-bold card-title">Locate a Community Centre</h6>
                         <form class="form-inline"> 
-                            <input type="search" class="form-control">
-                            <button class="btn btn-pa-solid"><i class="fa fa-search"></i></button>
+                            <input type="search" class="form-control form-control-sm">
+                            <button class="btn btn-pa-solid py-1"><i class="fas fa-search"></i></button>
                           </form>
                       
                   </div>
@@ -409,19 +442,19 @@
                   <div class="col-3 px-1">
                       <h6 class="text-uppercase"><u>Follow Us</u></h6>
                       <div class="mb-4">
-                        <i class="fa fa-facebook fa-lg mr-4"></i>
-                        <i class="fa fa-instagram fa-lg mr-4"></i>
-                        <i class="fa fa-twitter fa-lg"></i>
+                        <i class="fab fa-facebook-f fa-lg mr-4"></i>
+                        <i class="fab fa-instagram fa-lg mr-4"></i>
+                        <i class="fab fa-twitter fa-lg"></i>
                       </div>
                       <p>Join our mailing list</p>
                       <form class="d-flex flex-column align-items-end p-3" style="background: #F5F5F5">
                         <div class="form-group w-100">
                             <label for="inputName">Name</label>
-                            <input type="email" class="form-control" id="inputName" style="border-color: #E31B23;">
+                            <input type="text" class="form-control form-control-sm" id="inputName" style="border-color: #E31B23;">
                         </div>
                         <div class="form-group w-100">
                           <label for="inputEmail">Email address</label>
-                          <input type="email" class="form-control" id="inputEmail" style="border-color: #E31B23;">
+                          <input type="email" class="form-control form-control-sm" id="inputEmail" style="border-color: #E31B23;">
                         </div>
                         <button type="submit" class="btn btn-pa-solid text-uppercase align-right mt-auto p-2 font-weight-bold">Subscribe</button>
                       </form>
@@ -430,11 +463,8 @@
 
               </div>
             </footer>
-              
-           
-      
-      
-      
+
+
           
 
 
@@ -443,5 +473,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".dropdown").on("hide.bs.dropdown", function(){
+          $(".btn").html('Dropdown <span class="caret"></span>');
+        });
+        $(".dropdown").on("show.bs.dropdown", function(){
+          $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+        });
+      });
+      </script>
+  
+  
   </body>
 </html>
