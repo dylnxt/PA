@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico|Open+Sans:400,600,800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    color: #616161;
+    height: 100%;
+}
+
+h1, h2, h3, .display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#promotions {
+    background: url(../img/blob_bg.svg) top right no-repeat;
+}
+
+#activities {
+    background: url(../img/activities_bg.svg) top left no-repeat;
+}
+
+.card-title {
+    color: #E31B23;
+    font-weight: 600;
+}
+
+.border-bottom-section {
+    border-bottom: 1px solid #E31B23;
+}
+
+footer {
+    border-top: 1px solid #E31B23;
+}
+
+.pa-border {
+    border: 1px solid #E31B23;
+}
+
+.btn-pa-outline {
+    color: #E31B23;
+    border-color: #E31B23;
+  }
+
+.btn-pa-outline:hover {
+    color: #fff;
+    background-color: #E31B23;
+    border-color: #E31B23;
+  }
+
+.border-pa-courses {
+    border-left: 10px solid #F7DB05 !important;
+}
+
+.border-pa-events {
+    border-left: 10px solid #E31B23 !important;
+}
+
+.border-pa-groups {
+    border-left: 10px solid #6EBF44 !important;
+}
+
+.border-pa-facilities {
+    border-left: 10px solid #6FCCDD !important;
+}
+
+.footerLogo {
+    font-weight: 600;
+    color: #E31B23;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+}
+
+#paNavBar li a {
+    color: #fff;     
+    font-family: 'Open Sans', sans-serif;
+    background-color: #616161; 
+    padding: 1.2em 0;
+}
+
+#paNavBar .dropdown-menu a{
+    background-color: #fff;
+    color: #616161; 
+    padding: .5em;
+}
+
+#paNavBar .dropdown-menu a:hover {
+    background-color:#EE787D; 
+    color: #fff;  
+}
+
+.carousel-caption {
+    bottom: 35%
+}
+
+.btn-pa-solid {
+    color: #fff;
+    background-color: #E31B23;
+    border-color: #E31B23;
+  }
+  
+.btn-pa-solid:hover {
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16)
+  }
+
+.btn-pa-cart {
+  color: #FF5852;
+  border-color: #FF5852;
+}
+
+.btn-pa-cart:hover {
+  color: #fff;
+  background-color: #FF5852;
+  border-color: #FF5852;
+}
+ 
+ #navCourses:hover, #navCourses:focus-within, #navCourses.active {
+    background-image: linear-gradient(90deg, #f7db05 0%, #ff5852 100%) !important;
+    border-right: 1px solid #fff;
+   
+ }  
+
+ #navEvents:hover {
+    background-image: linear-gradient(90deg, #ff5852 0%, #e31b23 100%) !important;
+   /*border-right: 1px solid #fff;
+    border-left: 1px solid #fff;*/
+ }  
+
+ #navFacilities:hover {
+    background-image: linear-gradient(90deg, #6fccdd 0%, #f7db05 100%) !important;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+ }  
+
+ #navGroups:hover, #navGroups:focus-within, #navGroups.active {
+    background-image: linear-gradient(90deg, #6ebf44 0%, #6fccdd 100%) !important;
+    /*border-left: 1px solid #fff;*/
+ }  
+
+
+ /*main nav dropdown arrow */
+ #paNavBar .dropdown-toggle::after {
+    /*display: inline-block;*/
+    width: 1em;
+    height: 1em;
+    margin:  1.6em 2em 0 0;
+    float: right;
+  
+    content: "";
+    border: 3em solid;
+    border-width: 0 .3em .3em 0;
+    transform: rotateZ(45deg)
+    }
+
+
+
+#paNavBar .dropdown-toggle[aria-expanded="true"]:after {
+  transform: rotate(-135deg);
+}
+
+
+/*for the animation*/
+#paNavBar .dropdown-toggle:after {
+  transition: 0.5s;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(227, 27, 35, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(227, 27, 35, 0.6);
+  outline: 0 none;
+}
+
+
+#coursesLanding {
+    background: url('../img/courses_landing_hero.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 75vh;
+    color: #fff;
+  
+}
+
+.jumbotron h1 {
+    font-family: Pacifico, cursive;
+    line-height: 1.25em;
+    word-spacing: .05em;
+    margin-bottom: .2em;
+    margin-left: -.1em;
+}
+
+.jumbotron h3 {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+a.pa-courses-cube {
+    color: #616161;
+}
+
+a.pa-courses-cube:hover {
+    background:#F7DB05;
+   
+    text-decoration: none;
+}
+
+.has-symbol .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-symbol .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #E31B23;
+}
+
+.pa-color-red {
+    color: #E31B23;
+}
+
+.breadcrumb {
+    background: none;
+}
+
+.breadcrumb-item.active {
+    font-weight: 800;
+    color: #212121;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #212121;
+    content: ">";
+  }
+
+  #result-page-courses {
+    background-image: linear-gradient(90deg, #f7db05 0%, #ff5852 100%) !important; 
+    color: #fff;
+  }
+
+  #result-page-courses a{
+      color: #212121;
+  }
+
+  .checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+  content: "\f00c";
+  font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #E31B23;
+}
+
+
