@@ -9,14 +9,15 @@
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/custom.css">
    
 
-    <title>OnePA</title>
+    <title>OnePA - Checkout</title>
   </head>
-  <body>
+  <body id="pageCheckout">
     <header class="container-fluid d-flex flex-column">
     <div class="row align-items-center">
       <div class="col-2">
@@ -36,58 +37,727 @@
 
     </div><!-- row -->
     </header>
-    <main role="main">
+    <main>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb-5">
                     <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Facilities</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Search Results</li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="courses_landing.html">Courses</a></li>
+                        <li class="breadcrumb-item"><a href="courses_results.html">Search Results</a></li>
                           <li class="breadcrumb-item active" aria-current="page">Checkout</li>
                       </ol>
                     </nav>
-                    <h1 class="display-4 pb-4">Checkout</h1>
-                    <h3>Check your cart details</h3>
+                    <h1 class="display-4">Checkout</h1>
+                    <!--<h4>Check your cart details</h4>-->
                     
-                </div>
+                </div><!-- col-lg-12 mb-5 -->
             </div><!-- row -->
             <div class="row">
-                <div class="col-lg-11 py-5">
-                  <div class=" d-flex justify-content-center">  
-                    <ul class="nav nav-pills">
-                      <li class="nav-item mr-5">
-                        <a class="nav-link active rounded-circle"  href="#home">1</a>
-                      </li>
-                      <li class="nav-item mx-5">
-                        <a class="nav-link border border-secondary rounded-circle" href="#menu1">2</a>
-                      </li>
-                      <li class="nav-item mx-5">
-                        <a class="nav-link border border-secondary rounded-circle"  href="#menu2">3</a>
-                      </li>
-                      <li class="nav-item ml-5">
-                          <a class="nav-link border border-secondary rounded-circle"  href="#menu2">4</a>
-                      </li>
-                    </ul>
-                  </div>
-
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      <div class="tab-pane container active" id="home">step 1</div>
-                      <div class="tab-pane container fade" id="menu1">step 2</div>
-                      <div class="tab-pane container fade" id="menu2">step 3</div>
-                    </div>
+                <div class="col-lg-12">
+                 
                     
-                    <button class="prevtab btn btn-success">Prev</button>
+                    <div class="stepwizard mb-5">
+                        <div class="stepwizard-row setup-panel">
+                            <div class="stepwizard-step">
+                                <a href="#step-1" role="button" class="btn btn-pa-solid btn-circle"><span class="h4">1</span></a>
+                                <p>Summary</p>
+                            </div>
+                            <div class="stepwizard-step text-center">
+                                <a href="#step-2" role="button" class="btn btn-circle btn-outline-dark disabled"><span class="h4">2</span></a>
+                                <p>Details</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <a href="#step-3" role="button" class="btn btn-circle btn-outline-dark disabled"><span class="h4">3</span></a>
+                                <p>Review</p>
+                            </div>
+                            <div class="stepwizard-step">
+                                <a href="#step-4" role="button" class="btn btn-circle btn-outline-dark disabled"><span class="h4">4</span></a>
+                                <p>Payment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row -->
+            </div><!-- col-lg-12 -->
+                    
 
-	                  <button class="nexttab btn btn-success">Next</button>
-                </div><!-- col-lg-12 -->
-            </div><!-- row -->
+                    <form class="pb-5">
+                        <div class="row setup-content" id="step-1">
+                            <div class="col-lg-12">
+
+                                <h3>Summary</h3>
+                                <p class="h5 mb-5">Check your cart details</p>
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <!-- start of card component -->
+                                        <div class="border-pa-courses p-3 mb-3 border rounded-right shadow-sm bg-white">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <h4>Aroma Stretch Course</h4>
+                                                    <p>Aroma Stretch is a combination of Stretch Exercise with Aromatherapy. It is the ideal balance of body and mind, improving health and enhancing body movements. This class uses Essential Senses to aid in stress and mood management.</p>
+
+                                                </div>
+                                                <div class="col-2">
+                                                        <button type="button" class="ml-1 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                        </button>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                        <p><small><u>Ang Mo Kio CC</u><br>Every Wednesday, 8 sessions, 9.00am &mdash; 11.00am 
+                                                        <br>Starting 17 July 2019</small></p>
+                                                </div><!-- col-8 -->
+                                                <div class="col-4 text-right">
+
+                                                        <small><del>&dollar;140</del><br><span style="font-size: .8em">PAssion discount</span></small>
+                                                        <h4 class="font-weight-bold">&dollar;120</h4>
+
+                                                </div><!-- col-4 text-right -->
+
+                                            </div><!-- row -->
+                                        </div><!-- row border-pa-courses mb-3 bg-light -->
+                                        <!-- end card component -->
+
+                                        
+                                        <!-- start of card component -->
+                                                <div class="border-pa-facilities p-3 my-3 border rounded-right shadow-sm bg-white">
+                                                        <div class="row">
+                                                            <div class="col-10">
+                                                                <h4>Badminton Court</h4>
+                                                                <p>Note: Bring your own badminton racket and shuttle cock. Badminton net will be provided. </p>
+                                                                
+                                                            </div>
+                                                            <div class="col-2">
+                                                                    <button type="button" class="ml-1 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                    <p><small><u>Bishan CC</u>
+                                                                    <br>30 August 2019, 9.00am &mdash; 11.00am </small></p>
+                                                            </div><!-- col-8 -->
+                                                            <div class="col-4 text-right">
+                                                                         
+                                                                    <small><del>&dollar;4/hr</del><br><span style="font-size: .8em">PAssion discount</span></small>
+                                                                    <h4 class="font-weight-bold">&dollar;3.60/hr</h4>
+                                                                          
+                                                            </div><!-- col-4 text-right -->
+    
+                                                        </div><!-- row -->
+                                                    </div><!-- row border-pa-courses mb-3 bg-light -->
+                                                    <!-- end card component -->
+                                        
+                                         <!-- start of card component -->
+                                                <div class="border-pa-groups p-3 my-3 border rounded-right shadow-sm bg-white">
+                                                        <div class="row">
+                                                            <div class="col-10">
+                                                                <h4>Gardening Interest Group</h4>
+                                                                <p>The gardening interest group is one of the closest to heart to many of the green fingers. Singapore has many spaces and community gardens. Neighbours can look forward to real tips, latest technology or simply make friends in this interest group.</p>
+                                                                
+                                                            </div>
+                                                            <div class="col-2">
+                                                                    <button type="button" class="ml-1 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                    <p><small><u>Hougang CC</u>
+                                                                    <br>Every Thursday, 9.00am &mdash; 11.00am </small></p>
+                                                            </div><!-- col-8 -->
+                                                            <div class="col-4 text-right">
+                                                                         
+                                                                    <small><del>&dollar;10/pax</del><br><span style="font-size: .8em">PAssion discount</span></small>
+                                                                    <h4 class="font-weight-bold">&dollar;9/pax</h4>
+                                                                          
+                                                            </div><!-- col-4 text-right -->
+    
+                                                        </div><!-- row -->
+                                                    </div><!-- row border-pa-courses mb-3 bg-light -->
+                                                    <!-- end card component -->
+
+                                    </div><!-- col-6 -->
+
+
+                                    <div class="col-6">
+                                        <div class="p-2 bg-light mb-3">
+                                            <table class="table table-borderless">
+                                            
+                                                <thead class="border-bottom border-dark text-uppercase">
+                                                    <tr>
+
+                                                        <td>Items</td>
+                                                        <td class="text-center" >Units</td>
+                                                        <td class="text-right">Final Price</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="border-bottom border-dark">
+
+                                                    <tr>
+
+                                                        <td class="font-weight-bold">Aroma Stretch Course</td>
+                                                        <td>
+                                                            <div class="number">
+                                                                    <button type="button" class="btn btn-pa-outline minus">&minus;</button>
+                                                                    <input class="checkoutCounter" type="text" value="1" disabled>
+                                                                    <button type="button" class="btn btn-pa-solid plus">&plus;</button>
+                                                            </div>
+
+
+                                                        </td>
+                                                        <td class="text-right">&dollar;220</td>
+                                                  </tr>
+                                                  <tr>
+
+                                                        <td class="font-weight-bold">Badminton Court</td>
+                                                        <td>
+                                                            <div class="number">
+                                                                    <button type="button" class="btn btn-pa-outline minus">&minus;</button>
+                                                                    <input class="checkoutCounter" type="text" value="1" disabled>
+                                                                    <button type="button" class="btn btn-pa-solid plus ">&plus;</button>
+                                                            </div>
+
+                                                        </td>
+                                                        <td class="text-right">&dollar;7.20</td>
+                                                  </tr>
+                                                  <tr>
+
+                                                    <td class="font-weight-bold">Gardening Interest Group</td>
+                                                    <td>
+                                                        <div class="number">
+
+                                                                <button type="button" class="btn btn-pa-outline minus">&minus;</button>
+                                                                <input class="checkoutCounter" type="text" value="1" disabled>
+                                                                <button type="button" class="btn btn-pa-solid plus">&plus;</button>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="text-right">&dollar;9.00</td>
+                                                  </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td colspan="2"><h3>Total</h3><small class="pa-color-red">Total Savings</small></td>
+                                                        <td class="text-right"><h3>&dollar;236.20</h3><small class="pa-color-red">&dollar;25.40</small></td>
+                                                    </tr>
+                                                </tfoot>
+                                              </table>
+                                            </div>
+                                        
+                                         <button class="btn btn-pa-solid nextBtn pull-right rounded-pill float-right px-4" type="button">Next</button>
+
+
+
+                                    </div><!-- col-6 -->
+
+
+                                </div><!-- row end-->
+
+                            </div><!-- col-lg-12 -->
+                        </div><!-- end step 1 -->
+
+
+
+
+                        <div class="row setup-content" id="step-2">
+                            <div class="col-lg-12">
+                               
+                                <h3>Details</h3>
+                                <p class="h5 mb-5">Who will be joining?</p>
+                                
+                                
+                                <div class="card mb-3 border-pa-courses rounded-bottom"><!-- aroma -->
+                                    <div class="card-header bg-transparent" id="heading-example">
+                                        <h5><a class="text-dark text-decoration-none" data-toggle="collapse" href="#item-1" aria-expanded="true" aria-controls="item-1"><i class="fas fa-chevron-down float-right pa-color-red"></i>Aroma Stretch Course</a> </h5>
+                                    </div>
+                                    
+                                    <div id="item-1" class="collapse show" aria-labelledby="item-1">
+
+                                    <div class="card-body">
+                                        <div class="card mx-4 mb-4"><!-- participant 1 details-->
+                                            <div class="card-header pa-color-red font-weight-bold bg-white border-0">
+                      <button type="button" class="ml-1 mr-2 mb-1 close float-left pa-color-red" href="#participant-1" aria-expanded="true"><span aria-hidden="true">&times;</span></button> <span class="h5 font-weight-bold">Participant 1</span>
+                                            </div>
+                                            <div class="card-body">
+                                            
+                                                <p>Select a person from below to fill in your details automatically, or key in the details of a new person.</p>
+                                                
+                                                <div class="form-control mb-2 w-25">
+                                                    <div class="selectBox"onclick="showCheckboxes()">
+                                                      <select class="border-0" >
+                                                        <option>Use saved profiles </option>
+                                                      </select>
+                                                      <div class="overSelect"></div>
+                                                    </div>
+                                                    <div id="checkboxes" class="border p-1" style="position: relative; z-index: 300">
+                                                      <div class="custom-control custom-checkbox ">
+
+                                                        <input class="custom-control-input" type="checkbox" id="profile1" />
+                                                          <label class="custom-control-label" for="profile1">Myself</label>
+                                                      </div>
+
+                                                      <div class="custom-control custom-checkbox">
+
+                                                          <input class="custom-control-input" type="checkbox" id="profile2" />
+                                                          <label class="custom-control-label" for="profile2">Mother</label>
+                                                      </div>
+
+                                                        <div class="custom-control custom-checkbox">
+
+                                                          <input class="custom-control-input" type="checkbox" id="profile3" />
+                                                          <label class="custom-control-label" for="profile3">Jamie</label>
+                                                      </div>
+
+
+
+                                                    </div>
+                                                  </div><!-- multiselect -->
+                                                
+                                                <input readonly class="form-control mb-2 w-25" type="text" placeholder="Name: Jonathan Yeo">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Gender: Male">
+                                                  <input class="form-control mb-2 w-25" type="text" placeholder="DOB: 28 Nov 1995">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Email: jon.yeo@gmail.com">
+                                                  <input class="form-control mb-2 w-25" type="text" placeholder="Name: Jonathan Yeo">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Contact Number: 9123 4567">
+                                                <button class="text-uppercase btn btn-link font-weight-bold mt-4">Save this profile</button>
+          
+                                            
+                                            </div>
+
+
+                                        </div><!-- end participant 1 -->
+                                        
+                                        <div class="card mx-4 mb-5 border-0">
+                                          <div class="card-header font-weight-bold bg-light border-0">
+                                              <button type="button" class="ml-1 mr-2 mb-1 close float-left" href="#participant-2" aria-expanded="true">
+                                                      <span aria-hidden="true">&plus;</span>
+                                              </button> <span class="h5 font-weight-bold">Participant 2</span>
+                                            </div>
+                                          <!--<div class="card-body">
+                                          </div>-->
+                                        </div><!-- participant-2 -->
+                                    </div>
+                                    </div><!-- collapse show -->
+                                </div><!-- aroma card -->
+                                
+                                
+                            
+                                <div class="card mb-3 border-pa-facilities rounded-bottom"><!-- badminton court -->
+                                    <div class="card-header bg-transparent" id="heading-example">
+                                        <h5><a class="text-dark" data-toggle="collapse" href="#item-1" aria-expanded="true" aria-controls="item-1"><i class="fas fa-chevron-down float-right pa-color-red"></i>Badminton Court</a> </h5>
+                                    </div>
+                                    
+                                    <div id="item-1" class="collapse" aria-labelledby="item-1">
+
+                                    <div class="card-body">
+                                        <div class="card mx-4 mb-4"><!-- participant 1 details-->
+                                            <div class="card-header pa-color-red font-weight-bold bg-white border-0">
+                      <button type="button" class="ml-1 mr-2 mb-1 close float-left pa-color-red" href="#participant-1" aria-expanded="true"><span aria-hidden="true">&times;</span></button> <span class="h5 font-weight-bold">Participant 1</span>
+                                            </div>
+                                            <div class="card-body">
+                                            
+                                                <p>Select a person from below to fill in your details automatically, or key in the details of a new person.</p>
+                                                
+                                                <div class="form-control mb-2 w-25">
+                                                    <div class="selectBox"onclick="showCheckboxes()">
+                                                      <select class="border-0" >
+                                                        <option>Use saved profiles </option>
+                                                      </select>
+                                                      <div class="overSelect"></div>
+                                                    </div>
+                                                    <div id="checkboxes" class="border p-1" style="position: relative; z-index: 300">
+                                                      <div class="custom-control custom-checkbox ">
+
+                                                        <input class="custom-control-input" type="checkbox" id="profile1" />
+                                                          <label class="custom-control-label" for="profile1">Myself</label>
+                                                      </div>
+
+                                                      <div class="custom-control custom-checkbox">
+
+                                                          <input class="custom-control-input" type="checkbox" id="profile2" />
+                                                          <label class="custom-control-label" for="profile2">Mother</label>
+                                                      </div>
+
+                                                        <div class="custom-control custom-checkbox">
+
+                                                          <input class="custom-control-input" type="checkbox" id="profile3" />
+                                                          <label class="custom-control-label" for="profile3">Jamie</label>
+                                                      </div>
+
+
+
+                                                    </div>
+                                                  </div><!-- multiselect -->
+                                                
+                                                <input readonly class="form-control mb-2 w-25" type="text" placeholder="Name: Jonathan Yeo">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Gender: Male">
+                                                  <input class="form-control mb-2 w-25" type="text" placeholder="DOB: 28 Nov 1995">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Email: jon.yeo@gmail.com">
+                                                  <input class="form-control mb-2 w-25" type="text" placeholder="Name: Jonathan Yeo">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Contact Number: 9123 4567">
+                                                <button class="text-uppercase btn btn-link font-weight-bold mt-4">Save this profile</button>
+          
+                                            
+                                            </div>
+
+
+                                        </div><!-- end participant 1 -->
+                                        
+                                        <div class="card mx-4 mb-5 border-0">
+                                          <div class="card-header font-weight-bold bg-light border-0">
+                                              <button type="button" class="ml-1 mr-2 mb-1 close float-left" href="#participant-2" aria-expanded="true">
+                                                      <span aria-hidden="true">&plus;</span>
+                                              </button> <span class="h5 font-weight-bold">Participant 2</span>
+                                            </div>
+                                          <!--<div class="card-body">
+                                          </div>-->
+                                        </div><!-- participant-2 -->
+                                    </div>
+                                    </div><!-- collapse show -->
+                                </div><!-- badminton card -->
+                                <div class="card mb-3 border-pa-groups rounded-bottom"><!-- gardening interest group -->
+                                    <div class="card-header bg-transparent" id="heading-example">
+                                        <h5><a class="text-dark" data-toggle="collapse" href="#item-1" aria-expanded="true" aria-controls="item-1"><i class="fas fa-chevron-down float-right pa-color-red"></i>Gardening Interest Group</a> </h5>
+                                    </div>
+                                    
+                                    <div id="item-1" class="collapse" aria-labelledby="item-1">
+
+                                    <div class="card-body">
+                                        <div class="card mx-4 mb-4"><!-- participant 1 details-->
+                                            <div class="card-header pa-color-red font-weight-bold bg-white border-0">
+                      <button type="button" class="ml-1 mr-2 mb-1 close float-left pa-color-red" href="#participant-1" aria-expanded="true"><span aria-hidden="true">&times;</span></button> <span class="h5 font-weight-bold">Participant 1</span>
+                                            </div>
+                                            <div class="card-body">
+                                            
+                                                <p>Select a person from below to fill in your details automatically, or key in the details of a new person.</p>
+                                                
+                                                <div class="form-control mb-2 w-25">
+                                                    <div class="selectBox"onclick="showCheckboxes()">
+                                                      <select class="border-0" >
+                                                        <option>Use saved profiles </option>
+                                                      </select>
+                                                      <div class="overSelect"></div>
+                                                    </div>
+                                                    <div id="checkboxes" class="border p-1" style="position: relative; z-index: 300">
+                                                      <div class="custom-control custom-checkbox ">
+
+                                                        <input class="custom-control-input" type="checkbox" id="profile1" />
+                                                          <label class="custom-control-label" for="profile1">Myself</label>
+                                                      </div>
+
+                                                      <div class="custom-control custom-checkbox">
+
+                                                          <input class="custom-control-input" type="checkbox" id="profile2" />
+                                                          <label class="custom-control-label" for="profile2">Mother</label>
+                                                      </div>
+
+                                                        <div class="custom-control custom-checkbox">
+
+                                                          <input class="custom-control-input" type="checkbox" id="profile3" />
+                                                          <label class="custom-control-label" for="profile3">Jamie</label>
+                                                      </div>
+
+
+
+                                                    </div>
+                                                  </div><!-- multiselect -->
+                                                
+                                                <input readonly class="form-control mb-2 w-25" type="text" placeholder="Name: Jonathan Yeo">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Gender: Male">
+                                                  <input class="form-control mb-2 w-25" type="text" placeholder="DOB: 28 Nov 1995">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Email: jon.yeo@gmail.com">
+                                                  <input class="form-control mb-2 w-25" type="text" placeholder="Name: Jonathan Yeo">
+                                                <input class="form-control mb-2 w-25" type="text" placeholder="Contact Number: 9123 4567">
+                                                <button class="text-uppercase btn btn-link font-weight-bold mt-4">Save this profile</button>
+          
+                                            
+                                            </div>
+
+
+                                        </div><!-- end participant 1 -->
+                                        
+                                        <div class="card mx-4 mb-5 border-0">
+                                          <div class="card-header font-weight-bold bg-light border-0">
+                                              <button type="button" class="ml-1 mr-2 mb-1 close float-left" href="#participant-2" aria-expanded="true">
+                                                      <span aria-hidden="true">&plus;</span>
+                                              </button> <span class="h5 font-weight-bold">Participant 2</span>
+                                            </div>
+                                          <!--<div class="card-body">
+                                          </div>-->
+                                        </div><!-- participant-2 -->
+                                    </div>
+                                    </div><!-- collapse show -->
+                                </div><!-- aroma card -->
+
+                                <button class="btn btn-pa-solid nextBtn pull-right rounded-pill float-right px-4" type="button">Next</button>
+                                
+                            </div>
+                        </div><!-- end step 2 -->
+
+
+                        <div class="row setup-content" id="step-3">
+                            <div class="col-lg-12">
+                                
+                                <h3>Review</h3>
+                                <p class="h5 mb-5">Almost there, just need you to confirm these details</p>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-lg-10">
+                                    <p class="font-weight-bold">Order Review</p>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <button class="btn btn-outline-secondary rounded-pill float-right editCart">
+                                            <svg class=" w-25 mt-n1 mr-2" xmlns="http://www.w3.org/2000/svg" width="19.958" height="19.958" viewBox="0 0 19.958 19.958">
+  <g id="edit_icon" transform="translate(0.05 0.071)">
+    <path id="Path_1548" data-name="Path 1548" d="M1562,861.943h5.393l14.444-14.444-5.393-5.393L1562,856.55Zm1.992-1.992v-2.576l2.576,2.576Zm1.408-3.985,8.553-8.553,2.576,2.576-8.553,8.553Zm13.619-8.467-1.082,1.082L1575.362,846l1.082-1.082Z" transform="translate(-1562 -842.106)" stroke-width="0.1"/>
+  </g>
+</svg>Edit</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="p-3 border mb-5 col-lg-12">
+                                    <table class="table table-borderless">
+
+                                        <thead class="border-bottom text-uppercase">
+                                            <tr>
+
+                                                <td>Items</td>
+                                                <td class="text-center">Location</td>
+                                                <td class="text-center" >Units</td>
+                                                <td class="text-right">Final Price</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="border-bottom">
+
+                                            <tr>
+
+                                                <td class="font-weight-bold">Aroma Stretch Course</td>
+                                                <td class="text-center">Ang Mo Kio CC</td>
+                                                <td class="text-center">2 pax</td>
+                                                <td class="text-right">&dollar;220</td>
+                                          </tr>
+                                          <tr>
+
+                                                <td class="font-weight-bold">Badminton Court</td>
+                                                <td class="text-center">Bishan CC</td>
+                                                <td class="text-center">2 hours</td>
+                                                <td class="text-right">&dollar;7.20</td>
+                                          </tr>
+                                          <tr>
+
+                                            <td class="font-weight-bold">Gardening Interest Group</td>
+                                            <td class="text-center">Hougang CC</td>
+                                            <td class="text-center">1 pax</td>
+                                            <td class="text-right">&dollar;9.00</td>
+                                          </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="3"><h3>Total</h3><small class="pa-color-red">Total Savings</small></td>
+                                                <td class="text-right"><h3>&dollar;236.20</h3><small class="pa-color-red">&dollar;25.40</small></td>
+                                            </tr>
+                                        </tfoot>
+                                      </table>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-lg-10">
+                                    <p class="font-weight-bold align-baseline">Your Details</p>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <button class="btn btn-outline-secondary rounded-pill float-right editCart">
+                                            <svg class=" w-25 mt-n1 mr-2" xmlns="http://www.w3.org/2000/svg" width="19.958" height="19.958" viewBox="0 0 19.958 19.958">
+  <g id="edit_icon" transform="translate(0.05 0.071)">
+    <path id="Path_1548" data-name="Path 1548" d="M1562,861.943h5.393l14.444-14.444-5.393-5.393L1562,856.55Zm1.992-1.992v-2.576l2.576,2.576Zm1.408-3.985,8.553-8.553,2.576,2.576-8.553,8.553Zm13.619-8.467-1.082,1.082L1575.362,846l1.082-1.082Z" transform="translate(-1562 -842.106)" stroke-width="0.1"/>
+  </g>
+</svg>Edit</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-lg-12 border px-0 mb-4 bg-white">
+                                        <div class="card border-0 rounded-0 border-pa-courses my-4">
+                                            <div class="card-header bg-transparent">
+                                                <h5 class="font-weight-bold">Aroma Stretch Course</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Participant 1</p>
+                                                <p>Name: Jonathan Yeo Jia Jia</p>
+                                                <p>Gender: Male</p>
+                                                <p>Date of Birth: 28 Nov 1995</p>
+                                                <p>Email: jon.yeo@gmail.com</p>
+                                                <p>Contact number: 9123 4567</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card border-0 rounded-0 border-pa-facilities my-4">
+                                            <div class="card-header bg-transparent">
+                                                <h5 class="font-weight-bold">Badminton Court</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Participant 1</p>
+                                                <p>Name: Jonathan Yeo Jia Jia</p>
+                                                <p>Gender: Male</p>
+                                                <p>Date of Birth: 28 Nov 1995</p>
+                                                <p>Email: jon.yeo@gmail.com</p>
+                                                <p>Contact number: 9123 4567</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card border-0 rounded-0 border-pa-groups my-4">
+                                            <div class="card-header bg-transparent">
+                                                <h5 class="font-weight-bold">Gardening Interest Group</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Participant 1</p>
+                                                <p>Name: Jonathan Yeo Jia Jia</p>
+                                                <p>Gender: Male</p>
+                                                <p>Date of Birth: 28 Nov 1995</p>
+                                                <p>Email: jon.yeo@gmail.com</p>
+                                                <p>Contact number: 9123 4567</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div><!-- col-lg-12 border px-0 -->
+                                </div>
+
+                                <button class="btn btn-pa-solid nextBtn pull-right rounded-pill float-right px-4" type="button">Next</button>
+                                
+                            </div>
+                        </div><!-- end step 3 -->
+
+                        <div class="row setup-content" id="step-4">
+                            <div class="col-lg-12">
+                                
+                               
+                                <h3>Payment</h3>
+                                <p class="h5 mb-5">Last Step</p>
+                                <div class="row mb-3 pb-5 border-bottom">
+                                    
+                                    <div class="col-lg-6">
+                                        <p class="font-weight-bold mb-3">Payment Method</p>
+                                        <div class="p-3 mb-3 border rounded-lg bg-white">
+                                            <div class="custom-control custom-radio">
+                                            <input type="radio" id="enets" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="enets">eNETS</label>
+                                            </div>
+                                        </div>
+                                         <div class="p-3 mb-3 border rounded-lg bg-white">
+                                            <div class="custom-control custom-radio">
+                                            <input type="radio" id="credit" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="credit">Debit or Credit Card</label>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="p-3 mb-3 border rounded-lg bg-white">
+                                            <div class="custom-control custom-radio">
+                                            <input type="radio" id="ibank" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="ibank">iBanking</label>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="p-3 mb-3 border rounded-lg bg-white">
+                                            <div class="custom-control custom-radio">
+                                            <input type="radio" id="sgqr" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="sgqr">SGQR Payment (PayNow, PayLah, GrabPay, AliPay)</label>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="font-weight-bold mb-3">Order Summary</p>
+                                        <div class="row">
+                                            <div class="p-3 border mb-5 col-lg-12 bg-white">
+                                            <table class="table table-borderless ">
+
+                                                <thead class="border-bottom text-uppercase">
+                                                    <tr>
+
+                                                        <td>Items</td>
+
+                                                        <td class="text-center" >Units</td>
+                                                        <td class="text-right">Final Price</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="border-bottom">
+
+                                                    <tr>
+
+                                                        <td class="font-weight-bold">Aroma Stretch Course</td>
+
+                                                        <td class="text-center">2 pax</td>
+                                                        <td class="text-right">&dollar;220</td>
+                                                  </tr>
+                                                  <tr>
+
+                                                        <td class="font-weight-bold">Badminton Court</td>
+
+                                                        <td class="text-center">2 hours</td>
+                                                        <td class="text-right">&dollar;7.20</td>
+                                                  </tr>
+                                                  <tr>
+
+                                                    <td class="font-weight-bold">Gardening Interest Group</td>
+
+                                                    <td class="text-center">1 pax</td>
+                                                    <td class="text-right">&dollar;9.00</td>
+                                                  </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td colspan="2"><h3>Total</h3><small class="pa-color-red">Total Savings</small></td>
+                                                        <td class="text-right"><h3>&dollar;236.20</h3><small class="pa-color-red">&dollar;25.40</small></td>
+                                                    </tr>
+                                                </tfoot>
+                                              </table>
+                                            </div>
+                                        </div>
+                                        <!--<button class="btn btn-pa-solid nextBtn pull-right rounded-pill float-right px-4" type="submit">Confirm</button>-->
+                                        
+                                        <button type="button" class="btn btn-pa-solid nextBtn pull-right rounded-pill float-right px-4" data-toggle="modal" data-target="#staticBackdrop">Confirm</button>
+                                    
+                                    </div>
+                                </div><!-- row mb-3 -->
+
+                                <small>By continuing with this order, you agree to People Association&rsquo;s <a href="#" class="font-weight-bold text-decoration-none">Terms &amp; Conditions</a> and <a href="#" class="font-weight-bold text-decoration-none">Privacy Policy</a>.</small>
+ 
+                             
+                            </div>
+                        </div><!-- end step 4 -->
+                    </form><!-- end form for checkout process. important! -->
+                    
+                
+            </div><!-- container -->
         
-        </div>  
-    </main>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+ 
+              <div class="modal-body text-center">
+                <h4>Success!</h4>
+                <p class="font-weight-bold pa-color-red">Order Reference No: xxx-xxx-xxx</p>  
+                  <p>Your order has been made. We look forward to seeing you soon!</p>
+                  <p>You will receive an email confirmation with your receipt shortly.</p>
+                  <p>Meanwhile, you can view or change your order, and manage your notifications under <strong>My Account &gt; Manage Bookings</strong>.</p>
+                  <button type="button" class="btn btn-pa-outline" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+</div>
+      </main>
+   
 
       
 
@@ -102,48 +772,48 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js'></script>
+    <script src="js/checkout.js"></script>
+
+    <script>
+    	$(document).ready(function() {
+			$('.minus').click(function () {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.plus').click(function () {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+
+		});
+
+        var expanded = false;
+
+        function showCheckboxes() {
+        var checkboxes = document.getElementById("checkboxes");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+        }
+
+        
+    </script>
       
       
-      <script>
-      function bootstrapTabControl(){
-  var i, items = $('.nav-link'), pane = $('.tab-pane');
-  // next
-  $('.nexttab').on('click', function(){
-      for(i = 0; i < items.length; i++){
-          if($(items[i]).hasClass('active') == true){
-              break;
-          }
-      }
-      if(i < items.length - 1){
-          // for tab
-          $(items[i]).removeClass('active');
-          $(items[i+1]).addClass('active');
-          // for pane
-          $(pane[i]).removeClass('show active');
-          $(pane[i+1]).addClass('show active');
-      }
-
-  });
-  // Prev
-  $('.prevtab').on('click', function(){
-      for(i = 0; i < items.length; i++){
-          if($(items[i]).hasClass('active') == true){
-              break;
-          }
-      }
-      if(i != 0){
-          // for tab
-          $(items[i]).removeClass('active');
-          $(items[i-1]).addClass('active');
-          // for pane
-          $(pane[i]).removeClass('show active');
-          $(pane[i-1]).addClass('show active');
-      }
-  });
-}
-bootstrapTabControl();
-
-      </script>
+      
 
 
   </body>
