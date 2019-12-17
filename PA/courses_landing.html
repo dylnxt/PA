@@ -45,7 +45,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav w-100">
           <li class="nav-item w-100 dropdown">
-            <a id="navCourses" class="nav-link dropdown-toggle pl-4 active" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="text-left mx-auto d-inline-block"><span class="h5 text-uppercase font-weight-bold d-block">Courses</span><span class="d-block">I want to learn</span></div></a>
+            <a id="navCourses" class="nav-link dropdown-toggle pl-4 active" href="courses_landing.html" role="button" aria-haspopup="true" aria-expanded="false"><div class="text-left mx-auto d-inline-block"><span class="h3 text-uppercase font-weight-bold d-block">Courses</span><span class="d-block">I want to learn</span></div></a>
 
             <div class="dropdown-menu w-100">
               <a class="dropdown-item" href="#">Arts &amp; Music</a>
@@ -54,14 +54,28 @@
             
             </div>
           </li>
-          <li class="nav-item w-100">
-              <a id="navEvents" class="nav-link pl-4" href="#"><div class="text-left mx-auto d-inline-block"><span class="h5 text-uppercase font-weight-bold d-block">Events</span><span class="d-block">I want to attend</span></div></a>
-          </li>
-          <li class="nav-item w-100">
-            <a id="navFacilities"class="nav-link pl-4" href="#"><div class="text-left mx-auto d-inline-block"><span class="h5 text-uppercase font-weight-bold d-block">Facilities</span><span class="d-block">I want to book</span></div></a>
+          <li class="nav-item w-100 dropdown">
+              <a id="navEvents" class="nav-link dropdown-toggle pl-4" href="#"><div class="text-left mx-auto d-inline-block"><span class="h3 text-uppercase font-weight-bold d-block">Events</span><span class="d-block">I want to attend</span></div></a>
+          
+              <div class="dropdown-menu w-100">
+                <a class="dropdown-item" href="#">Karaoke Singing</a>
+                <a class="dropdown-item" href="#">Festival &amp; Celebration</a>
+                <a class="dropdown-item" href="#">Community Event</a>
+              
+              </div>
           </li>
           <li class="nav-item w-100 dropdown">
-            <a id="navGroups" class="nav-link dropdown-toggle pl-4" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"><div class="text-left mx-auto d-inline-block"><span class="h5 text-uppercase font-weight-bold d-block">Interest Groups</span><span class="d-block">I want to join</span></div></a>
+            <a id="navFacilities"class="nav-link dropdown-toggle pl-4" href="#"><div class="text-left mx-auto d-inline-block"><span class="h3 text-uppercase font-weight-bold d-block">Facilities</span><span class="d-block">I want to book</span></div></a>
+            <div class="dropdown-menu w-100">
+              <a class="dropdown-item" href="#">Badminton Courts</a>
+              <a class="dropdown-item" href="#">Basketball Courts</a>
+              <a class="dropdown-item" href="#">Yoga Studio</a>
+            
+            </div>
+          
+          </li>
+          <li class="nav-item w-100 dropdown">
+            <a id="navGroups" class="nav-link dropdown-toggle pl-4" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"><div class="text-left mx-auto d-inline-block"><span class="h3 text-uppercase font-weight-bold d-block">Interest Groups</span><span class="d-block">I want to join</span></div></a>
               <div class="dropdown-menu w-100">
               <a class="dropdown-item" href="#">Gardening &amp; Music</a>
               <a class="dropdown-item" href="#">Fitness &amp; Food</a>
@@ -146,44 +160,85 @@
               </div>
 
               <div class="card-deck my-5">
-                  <div class="card shadow-sm">
-                    <img src="img/img_card1.jpg" class="card-img-top w-100" alt="...">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Yoga Fitness</h5>
-                      <p class="card-text text-muted">Learn yoga fitness with a friend and get a discount.</p>
-                      <p class="card-text mt-auto"><small><u>Ang Mo Kio CC</u><br>17 Aug, Sat, 9.00am &mdash; 10.00am<br>
-                          10 lessons</small></p>
-                          
-                    </div>
-                  </div>
-                  <div class="card shadow-sm">
-                    <img src="img/img_card2.jpg" class="card-img-top w-100" alt="...">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Qi Gong Mass Workshop</h5>
-                      <p class="card-text">Get healthy with our Qi gong at the  park.</p>
-                      <p class="card-text mt-auto"><small><u>Bishan CC</u><br>20 Aug, Tue, 5.30pm &mdash; 6.30pm<br>
-                        10 lessons</small></p>
-                    </div>
-                  </div>
-                  <div class="card shadow-sm">
-                    <img src="img/img_card3.jpg" class="card-img-top w-100" alt="...">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title">Basketball court</h5>
-                      <p class="card-text">Book one court and get the discount for the subsequent booking.</p>
-                      <p class="card-text mt-auto"><small><u>Kampong Glam CC</u><br>20 Aug, Tue, 9.00am &mdash; 10.00m<br>
-                        10 lessons</small></p>
-                    </div>
-                  </div>
-                  <div class="card shadow-sm">
-                      <img src="img/img_card4.jpg" class="card-img-top w-100" alt="...">
-                      <div class="card-body f">
-                          <h5 class="card-title">Urban Gardening Group</h5>
-                          <p class="card-text">Book one court and get the discount for the subsequent booking.</p>
-                          <p class="card-text mt-auto"><small><u>Keat Hong CC</u><br>31 Jun, Wed, 2.00pm &mdash; 5.00pm<br>
-                            Weekly</small></p>
+                <div class="card-courses card shadow-sm">
+                    <img src="img/img_card1.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                    <div class="card-body d-flex flex-column px-3">
+                    <h5 class="card-title">Yoga Fitness</h5>
+                    <p class="card-text text-muted">Learn yoga fitness with a friend and get a discount.</p>
+                    <p class="card-text"><small><u>Ang Mo Kio CC</u><br>17 Aug, Sat, 9.00am &mdash; 10.00am<br>10 lessons</small></p>
+                       <div class="mt-auto">
+                           
+                              <button type="button" class="btn btn-pa-solid">BOOK</button>
+                              <button type="button" class="btn btn-pa-cart"><i class="fas fa-shopping-cart"></i></button>
+                            
+                          <div class="d-inline-block text-right align-bottom ml-4">      
+                            <small><del>$140</del><br><span style="font-size: .7em">PAssion discount</span></small>
+                            <p class="font-weight-bold m-0">$120</p>
+                          </div>
                       </div>
+                        
+                  </div>
+                </div>
+                <div class="card-courses card shadow-sm">
+                  <img src="img/img_card1.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                  <div class="card-body d-flex flex-column px-3">
+                  <h5 class="card-title">Yoga Dance</h5>
+                  <p class="card-text text-muted">Learn yoga fitness with a friend and get a discount.</p>
+                  <p class="card-text"><small><u>Ang Mo Kio CC</u><br>17 Aug, Sat, 9.00am &mdash; 10.00am<br>10 lessons</small></p>
+                     <div class="mt-auto">
+                         
+                            <button type="button" class="btn btn-pa-solid">BOOK</button>
+                            <button type="button" class="btn btn-pa-cart"><i class="fas fa-shopping-cart"></i></button>
+                          
+                        <div class="d-inline-block text-right align-bottom ml-4">      
+                          <small><del>$140</del><br><span style="font-size: .7em">PAssion discount</span></small>
+                          <p class="font-weight-bold m-0">$120</p>
+                        </div>
                     </div>
-                </div><!--card-deck-->
+                      
+                </div>
+              </div>
+                
+                
+              <div class="card-courses card shadow-sm">
+                <img src="img/img_card1.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                <div class="card-body d-flex flex-column px-3">
+                <h5 class="card-title">Aroma Stretch Course</h5>
+                <p class="card-text text-muted">Learn yoga fitness with a friend and get a discount.</p>
+                <p class="card-text"><small><u>Ang Mo Kio CC</u><br>17 Aug, Sat, 9.00am &mdash; 10.00am<br>10 lessons</small></p>
+                   <div class="mt-auto">
+                       
+                          <a href="course_details.html" role="button" class="btn btn-pa-solid">BOOK</a>
+                          <button type="button" class="btn btn-pa-cart"><i class="fas fa-shopping-cart"></i></button>
+                        
+                      <div class="d-inline-block text-right align-bottom ml-4">      
+                        <small><del>$140</del><br><span style="font-size: .7em">PAssion discount</span></small>
+                        <p class="font-weight-bold m-0">$120</p>
+                      </div>
+                  </div>
+                    
+              </div>
+            </div>
+            <div class="card-courses card shadow-sm">
+              <img src="img/img_card1.jpg" class="card-img-top w-100 img-fluid" alt="...">
+              <div class="card-body d-flex flex-column px-3">
+              <h5 class="card-title">Yoga Strech Course</h5>
+              <p class="card-text text-muted">Learn yoga fitness with a friend and get a discount.</p>
+              <p class="card-text"><small><u>Ang Mo Kio CC</u><br>17 Aug, Sat, 9.00am &mdash; 10.00am<br>10 lessons</small></p>
+                 <div class="mt-auto">
+                     
+                        <button type="button" class="btn btn-pa-solid">BOOK</button>
+                        <button type="button" class="btn btn-pa-cart"><i class="fas fa-shopping-cart"></i></button>
+                      
+                    <div class="d-inline-block text-right align-bottom ml-4">      
+                      <small><del>$140</del><br><span style="font-size: .7em">PAssion discount</span></small>
+                      <p class="font-weight-bold m-0">$120</p>
+                    </div>
+                </div>
+                  
+            </div>
+          </div>
+              </div><!--card-deck-->
 
              </div><!-- container -->
             </section><!-- promotions -->
@@ -193,29 +248,29 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-12 mx-auto mb-5 text-center border-bottom-section">
-                        <h1 class="text-uppercase">New Courses in all locations</h1>
+                        <h1 class="text-uppercase">New Courses &#64; <a href="#" class="pa-color-red font-weight-bold">all locations <i class="fas fa-map-marker-alt ml-2"></i></a></h1>
                         <h4 class="mb-3">New courses happening at these Community Centres</h4>
                       </div>  
                   </div>
                 
-                  <div class="row">
+                   <div class="row">
                     <div class="col-lg-12">
-                        <div class="card-deck">
-                            <div class="card border-0">
+                        <div class="card-deck mb-3">
+                            <div class="card shadow-sm">
                               <img src="img/henry-co-568066-unsplash.jpg" class="card-img-top" alt="...">
                               <div class="card-body ml-n3">
                                 <h5 class="card-title ">Mid-Autumn Festival</h5>
                                 <p class="card-text">Participate in our heartland celebrations</p>
                               </div>
                             </div>
-                            <div class="card border-0">
+                            <div class="card shadow-sm">
                               <img src="img/nick-fewings-1454405-unsplash.jpg" class="card-img-top" alt="...">
                               <div class="card-body ml-n3">
                                 <h5 class="card-title">Understanding Indian culture</h5>
                                 <p class="card-text">Learn the culture of Deepavali celebrations</p>
                               </div>
                             </div>
-                            <div class="card border-0">
+                            <div class="card shadow-sm">
                               <img src="img/toa-heftiba-530183-unsplash.jpg" class="card-img-top" alt="...">
                               <div class="card-body ml-n3">
                                 <h5 class="card-title">Food for the soul</h5>
@@ -225,21 +280,21 @@
                           </div>
         
                           <div class="card-deck">
-                              <div class="card border-0">
+                              <div class="card shadow-sm">
                                 <img src="img/neslihan-gunaydin-3493-unsplash.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ml-n3">
                                   <h5 class="card-title">Sustainable living in HDB</h5>
                                   <p class="card-text">Learn tips on how to live green</p>
                                 </div>
                               </div>
-                              <div class="card border-0">
+                              <div class="card shadow-sm">
                                 <img src="img/mike-enerio-1194391-unsplash.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ml-n3">
                                   <h5 class="card-title">Year end inspirations</h5>
                                   <p class="card-text">Start planning for the year end activities </p>
                                 </div>
                               </div>
-                              <div class="card border-0">
+                              <div class="card shadow-sm">
                                 <img src="img/cj-dayrit-1374243-unsplash.jpg" class="card-img-top" alt="...">
                                 <div class="card-body ml-n3">
                                   <h5 class="card-title">Exploring our community</h5>
@@ -249,7 +304,7 @@
                             </div>
 
                       </div>
-                    </div>  
+                    </div>
                     <div class="row">
                       <div class="col-lg-12 text-center mt-5">
                           <button type="button" class="btn btn-pa-outline rounded-pill px-3">Explore</button>
@@ -263,7 +318,13 @@
               <div class="container">
                   <div class="row">
                       <div class="col-lg-12 mx-auto mb-5 text-center border-bottom-section">
-                          <h1 class="text-uppercase">New courses &#64; all location</h1>
+                          <h1 class="text-uppercase">COURSES HAPPENING 
+                             <!-- <span class="custom-select" style="width:16rem; top: -16px">
+                                  <select>
+                                      <option>This week</option>
+                                      <option>This month</option>
+                                  </select> 
+                              </span> --><a href="#" class="pa-color-red font-weight-bold">ALL LOCATIONS <i class="fas fa-chevron-circle-down"></i></a></h1>
                           <h4 class="mb-3">Listing of the events, courses and interest groups near you</h4>
                       </div>  
                   </div>
@@ -454,6 +515,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+    <script src="js/customselect.js"></script>
   
   
   </body>
